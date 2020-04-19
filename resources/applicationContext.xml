@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        <!-- 为SpringTest类中name赋值 -->
+        <!-- 
+        	id:为这个对象取的唯一标识
+        	class：指定这个对象是哪一个类的，给的是类的全路径
+         -->
+       <!--  <bean id="test" class="SpringTest">
+       		 为对象中的属性赋值  
+       		 	ref:引用其他id，或对象，主键
+       		 	value：直接赋值
+       		 	name：要为哪一个属性赋值
+       		
+       		 <property name="name" value="fgd"></property>
+       		  <property name="tooks" value=" wew"></property>
+        </bean>
+        
+        
+        <bean id="test1" class="SpringTest">
+       		
+       		 <property name="name" value="fgdfd"></property>
+       		  <property name="tooks" value=" 不好喝白酒!!!"></property>
+        </bean> -->
+        
+        
+       
+       
+        <bean id="test" class="SpringTest">
+        	<constructor-arg name="name" value="张三"></constructor-arg>
+        	 <constructor-arg name="tooks" value="你好"></constructor-arg>
+        </bean>
+        
+        <bean id="test1" class="SpringTest">
+        	<constructor-arg name="name" value="李四"></constructor-arg>
+        	 <constructor-arg name="tooks" value="hi"></constructor-arg>
+        </bean>
+        
+</beans>
+
